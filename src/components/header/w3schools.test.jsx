@@ -13,7 +13,7 @@ describe('Header Component', () =>{
     beforeEach(() =>{
         component = setup();
     })
-    it('It should render without errors', () =>{ 
+    it('Should render Header Component', () =>{ 
         const wrapper = findByTestAttr(component, 'headerComponent');
         expect(wrapper.length).toBe(1);
     });

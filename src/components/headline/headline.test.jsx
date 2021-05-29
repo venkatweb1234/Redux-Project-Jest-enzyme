@@ -37,6 +37,20 @@ describe('Headline Componet', () =>{
             expect(component.length).toBe(1);
         });
 
+        it('Should render LearnMoreabout HTML Buttons w3Schools', () =>{
+            const component = findByTestAttr(wrapper, 'HTMLButtons');
+            expect(component.length).toBe(1);
+        });
+
+        it('Should render Learn HTML', () =>{
+            const component = findByTestAttr(wrapper, 'LearnHTML');
+            expect(component.length).toBe(1);
+        });
+
+        it('Should render Learn HTML Ref', () =>{
+            const component = findByTestAttr(wrapper, 'HTMLRef');
+            expect(component.length).toBe(1);
+        });
       
     });
 
@@ -57,6 +71,21 @@ describe('Headline Componet', () =>{
 
         it('Should render header', () =>{
             const component = findByTestAttr(wrapper, 'header');
+            expect(component.length).toBe(0);
+        });
+
+        it('Should render LearnMoreabout HTML Buttons w3Schools', () =>{
+            const component = findByTestAttr(wrapper, 'HTMLButtons');
+            expect(component.length).toBe(0);
+        });
+
+        it('Should render Learn HTML', () =>{
+            const component = findByTestAttr(wrapper, 'LearnHTML');
+            expect(component.length).toBe(0);
+        });
+
+        it('Should render Learn HTML Ref', () =>{
+            const component = findByTestAttr(wrapper, 'HTMLRef');
             expect(component.length).toBe(0);
         });
     });
