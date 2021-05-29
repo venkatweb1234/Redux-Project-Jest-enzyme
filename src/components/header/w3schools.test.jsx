@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import findByTestAttr from '../../Utils/commonTestfun'
+import {findByTestAttr} from '../../Utils/commonTestfun'
 import Header from './w3schools-header.component';
 
 const setup =(props={}) =>{
@@ -13,12 +13,12 @@ describe('Header Component', () =>{
     beforeEach(() =>{
         component = setup();
     })
-    test('It should render without errors', () =>{ 
+    it('It should render without errors', () =>{ 
         const wrapper = findByTestAttr(component, 'headerComponent');
         expect(wrapper.length).toBe(1);
     });
 
-    test('Should render a logo', () =>{
+    it('Should render a logo', () =>{
         const logo = findByTestAttr(component, 'logoIMG');
         expect(logo.length).toBe(1);
     })
