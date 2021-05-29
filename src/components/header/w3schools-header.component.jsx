@@ -1,13 +1,13 @@
 import React from 'react';
-import '../component/w3schhols.style.scss';
-import Logo from '../assets/logo/w3schoolslogo.png';
+import './w3schhols.style.scss';
+import Logo from '../../assets/logo/w3schoolslogo.png';
 
 const Header = () =>{
     return (
-       <header>
+       <header data-test="headerComponent">
            <div className="wrap">
                <div className="logo">
-                <img src={Logo} alt="Logo" />
+                <img data-test="logoIMG" src={Logo} alt="Logo" />
                </div>
            </div>
        </header>

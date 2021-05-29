@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './component/w3schools-header.component';
+import Header from './components/header/w3schools-header.component';
 function App() {
   return (
     <div className="App">
