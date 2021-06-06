@@ -1,4 +1,5 @@
 import {types} from './../actions/type';
+import {type} from 'os';
 
 export default (state =[], action) =>{
     switch(action.type){

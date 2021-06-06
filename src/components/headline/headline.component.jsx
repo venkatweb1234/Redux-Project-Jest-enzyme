@@ -20,7 +20,7 @@ class Headline extends Component{
                <div className="HTMLbtn" data-test="HTMLButtons">
                <a href="https://www.w3schools.com/html/default.asp" className="w3-button tut-button" data-test="LearnHTML">Learn HTML</a>
                <br />
-               <a href="https://www.w3schools.com/tags/default.asp" class="w3-button ref-button" data-test="HTMLRef">HTML Reference</a>
+               <a href="https://www.w3schools.com/tags/default.asp" className="w3-button ref-button" data-test="HTMLRef">HTML Reference</a>
                </div>
             </div>
         );
