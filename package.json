@@ -24,12 +24,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test:all": "set CI=true && react-scripts test && npm run lint",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "husky": {
     "hooks": {
-      "pre-push": "npm run test:all"
+      "pre-push": "CI=true npm test"
     }
   },
   "eslintConfig": {
